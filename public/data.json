@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "logo": "https://cdn.simpleicons.org/react/61DAFB",
+    "textColor": "#61DAFB",
+    "keyFeature": "Popular",
+    "name": "React",
+    "description": "A popular JavaScript library for building interactive user interfaces.",
+    "useFor": "Frontend",
+    "difficulty": "Beginner Friendly",
+    "rating": 4.9
+  },
+  {
+    "id": 2,
+    "logo": "https://cdn.simpleicons.org/vue.js/4FC08D",
+    "textColor": "#4FC08D",
+    "keyFeature": "Versatile",
+    "name": "Vue.js",
+    "description": "A progressive JavaScript framework for building modern user interfaces.",
+    "useFor": "Frontend",
+    "difficulty": "Beginner Friendly",
+    "rating": 4.8
+  },
+  {
+    "id": 3,
+    "logo": "https://cdn.simpleicons.org/angular/DD0031",
+    "textColor": "#DD0031",
+    "keyFeature": "Powerful",
+    "name": "Angular",
+    "description": "A complete framework for building large-scale web applications.",
+    "useFor": "Frontend",
+    "difficulty": "Intermediate",
+    "rating": 4.7
+  },
+  {
+    "id": 4,
+    "logo": "https://cdn.simpleicons.org/nodedotjs/339933",
+    "textColor": "#339933",
+    "keyFeature": "Standard",
+    "name": "Node.js",
+    "description": "A JavaScript runtime used to build fast and scalable server-side applications.",
+    "useFor": "Backend",
+    "difficulty": "Intermediate",
+    "rating": 4.9
+  },
+  {
+    "id": 5,
+    "logo": "https://cdn.simpleicons.org/express/000000",
+    "textColor": "#000000",
+    "keyFeature": "Minimal",
+    "name": "Express.js",
+    "description": "A lightweight Node.js framework for building web servers and APIs.",
+    "useFor": "Backend",
+    "difficulty": "Beginner Friendly",
+    "rating": 4.8
+  },
+  {
+    "id": 6,
+    "logo": "https://cdn.simpleicons.org/nextdotjs/000000",
+    "textColor": "#000000",
+    "keyFeature": "Full-stack",
+    "name": "Next.js",
+    "description": "A React framework for building fast, scalable, and SEO-friendly web applications.",
+    "useFor": "Frontend / Backend",
+    "difficulty": "Intermediate",
+    "rating": 4.9
+  },
+  {
+    "id": 7,
+    "logo": "https://cdn.simpleicons.org/javascript/F7DF1E",
+    "textColor": "#F7DF1E",
+    "keyFeature": "Essential",
+    "name": "JavaScript",
+    "description": "A core programming language for creating dynamic and interactive web applications.",
+    "useFor": "Frontend / Backend",
+    "difficulty": "Beginner Friendly",
+    "rating": 4.9
+  },
+  {
+    "id": 8,
+    "logo": "https://cdn.simpleicons.org/typescript/3178C6",
+    "textColor": "#3178C6",
+    "keyFeature": "Type-safe",
+    "name": "TypeScript",
+    "description": "A strongly typed programming language built on top of JavaScript.",
+    "useFor": "Frontend / Backend",
+    "difficulty": "Intermediate",
+    "rating": 4.9
+  },
+  {
+    "id": 9,
+    "logo": "https://cdn.jsdelivr.net/gh/callback-io/allogo@main/public/logos/java/icon.svg",
+    "textColor": "#ED8B00",
+    "keyFeature": "Reliable",
+    "name": "Java",
+    "description": "A widely used object-oriented language for building robust applications and services.",
+    "useFor": "Backend",
+    "difficulty": "Intermediate",
+    "rating": 4.8
+  },
+  {
+    "id": 10,
+    "logo": "https://cdn.simpleicons.org/mongodb/47A248",
+    "textColor": "#47A248",
+    "keyFeature": "Flexible",
+    "name": "MongoDB",
+    "description": "A flexible NoSQL database designed for modern application development.",
+    "useFor": "Database",
+    "difficulty": "Beginner Friendly",
+    "rating": 4.8
+  },
+  {
+    "id": 11,
+    "logo": "https://cdn.simpleicons.org/postgresql/4169E1",
+    "textColor": "#4169E1",
+    "keyFeature": "Powerful",
+    "name": "PostgreSQL",
+    "description": "A powerful open-source relational database known for reliability and advanced features.",
+    "useFor": "Database",
+    "difficulty": "Intermediate",
+    "rating": 4.9
+  },
+  {
+    "id": 12,
+    "logo": "https://cdn.simpleicons.org/python/3776AB",
+    "textColor": "#3776AB",
+    "keyFeature": "Versatile",
+    "name": "Python",
+    "description": "A versatile programming language widely used for web development, automation, and AI.",
+    "useFor": "Backend / AI",
+    "difficulty": "Beginner Friendly",
+    "rating": 4.9
+  }
+]
