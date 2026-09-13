@@ -21,7 +21,7 @@ function App() {
     <>
       <Nav />
       <Banner />
-      <Suspense fallback={<h2>loading.........</h2>}>
+      <Suspense fallback={<h1 className="max-w-6xl mx-auto flex justify-center items-center font-bold">loading.........</h1>}>
         <TechStack StackPromise={StackPromise}   />
       </Suspense>
       <Footer />  

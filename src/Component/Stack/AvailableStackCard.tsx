@@ -47,7 +47,7 @@ const AvailableStackCard = ({ stack, onAdd, isAdded }: { stack: IStack; onAdd: (
                     onClick={() => onAdd(stack)}
                     className="w-full border bg-[#0A0F1D] text-white py-2 rounded-lg hover:bg-[#EC4899] hover:text-white transition disabled:bg-gray-300 disabled:text-gray-500 disabled:cursor-not-allowed"
                 >
-                    {isAdded ? "Added to Stack" : "Add to Stack"}
+                    {isAdded ? "✓ Added to Stack" : "Add to Stack"}
                 </button>
             </div>
 
