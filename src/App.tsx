@@ -4,6 +4,7 @@ import Nav from "./Component/Nav"
 import TechStack from "./Component/Stack/TechStack"
 import './index.css'
 import type IStack from "./type/stack"
+import Footer from "./Component/Footer"
 
 //promise toiri
 const Stackfetch = async (): Promise<IStack[]> => {
@@ -23,6 +24,7 @@ function App() {
       <Suspense fallback={<h2>loading.........</h2>}>
         <TechStack StackPromise={StackPromise}   />
       </Suspense>
+      <Footer />  
 
     
 

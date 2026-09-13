@@ -5,7 +5,7 @@ import SelectedStackCard from './SelectedStackCard';
 const YourStack = ({
     stacks, onRemove, onRemoveAll }: { stacks: IStack[]; onRemove: (id: number) => void; onRemoveAll: () => void; }) => {
     return (
-        <div className="col-span-3">
+        <div >
             <div className="border border-gray-200 rounded-xl p-4">
 
 
@@ -16,7 +16,7 @@ const YourStack = ({
 
                     <p className="text-gray-500">
                         {stacks.length === 0
-                            ? "No technologies selected yet ."
+                            ? "No technologies selected yet."
                             : `${stacks.length} Technolog${stacks.length > 1 ? "ies" : "y"} Selected`
                         }
                     </p>

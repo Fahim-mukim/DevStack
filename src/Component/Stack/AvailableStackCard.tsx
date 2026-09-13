@@ -7,7 +7,7 @@ const AvailableStackCard = ({ stack, onAdd, isAdded }: { stack: IStack; onAdd: (
         >
 
 
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center gap-3">
                 <img
                     className="h-8 w-8 object-contain" src={stack.logo} />
 
@@ -24,7 +24,7 @@ const AvailableStackCard = ({ stack, onAdd, isAdded }: { stack: IStack; onAdd: (
                     {stack.description}
                 </p>
             </div>
-            <div className="flex justify-between items-center text-xs">
+            <div className="flex flex-wrap justify-between items-center gap-2 text-xs">
 
                 <button className="bg-[#e7e9ec] text-black px-2.5 py-1 rounded-xl">
                     {stack.useFor}
