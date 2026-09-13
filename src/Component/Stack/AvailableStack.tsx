@@ -21,6 +21,9 @@ const AvailableStack = ({ stacks }: { stacks: IStack[] }) => {
     const removeFromStack = (id: number) => {
         setYourStack(yourStack.filter((item) => item.id !== id));
     };
+    const removeAll = () => {
+        setYourStack([]);
+    };
     return (
         <div className="max-w-6xl mx-auto mt-10 grid grid-cols-12 gap-6">
             <div className="col-span-9">
@@ -38,7 +41,7 @@ const AvailableStack = ({ stacks }: { stacks: IStack[] }) => {
                 </div>
             </div>
             <div className="col-span-3">
-                <YourStack stacks={yourStack} onRemove={removeFromStack} />
+                <YourStack stacks={yourStack} onRemove={removeFromStack} onRemoveAll={removeAll} />
             </div>
 
 

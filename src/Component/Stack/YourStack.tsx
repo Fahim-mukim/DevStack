@@ -3,7 +3,7 @@ import type IStack from '../../type/stack';
 import SelectedStackCard from './SelectedStackCard';
 
 const YourStack = ({
-    stacks, onRemove }: {  stacks: IStack[];onRemove: (id: number) => void; }) => {
+    stacks, onRemove, onRemoveAll }: { stacks: IStack[]; onRemove: (id: number) => void; onRemoveAll: () => void; }) => {
     return (
         <div className="col-span-3">
             <div className="border border-gray-200 rounded-xl p-4">
@@ -21,7 +21,9 @@ const YourStack = ({
                         }
                     </p>
                 </div>
+
                 <div >
+
                     {stacks.length === 0 ? (
                         <div className="min-h-52 flex justify-center items-center text-gray-500">
                             <p>
@@ -33,11 +35,19 @@ const YourStack = ({
                             {stacks.map((stack) => (
                                 <div className=" border  border-gray-300 rounded-lg    " key={stack.id} >
                                     <SelectedStackCard
-                                        stack={stack}  onRemove={onRemove}
+                                        stack={stack} onRemove={onRemove}
                                     />
                                 </div>
                             ))}
                         </div>
+                    )}
+                    {stacks.length > 0 && (
+                        <button
+                            onClick={onRemoveAll}
+                            className="mt-4 w-full border border-red-200 text-red-500 py-2 rounded-lg hover:bg-red-50 transition"
+                        >
+                            Remove All
+                        </button>
                     )}
                 </div>
 
