@@ -5,6 +5,8 @@ import TechStack from "./Component/Stack/TechStack"
 import './index.css'
 import type IStack from "./type/stack"
 import Footer from "./Component/Footer"
+import { ToastContainer } from "react-toastify"
+import "react-toastify/dist/ReactToastify.css"
 
 //promise toiri
 const Stackfetch = async (): Promise<IStack[]> => {
@@ -25,7 +27,7 @@ function App() {
         <TechStack StackPromise={StackPromise}   />
       </Suspense>
       <Footer />  
-
+      <ToastContainer position="bottom-right" />
     
 
 
