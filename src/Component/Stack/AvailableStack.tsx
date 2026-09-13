@@ -7,7 +7,19 @@ const AvailableStack = ({ stacks }: { stacks: IStack[] }) => {
     const [yourStack, setYourStack] = useState<IStack[]>([]);
 
     const addToStack = (stack: IStack) => {
+        const alreadyAdded = yourStack.some(
+            (item) => item.id === stack.id
+        );
+
+        if (alreadyAdded) {
+            alert("This technology is already in your stack!");
+            return;
+        }
+
         setYourStack([...yourStack, stack]);
+    }
+    const removeFromStack = (id: number) => {
+        setYourStack(yourStack.filter((item) => item.id !== id));
     };
     return (
         <div className="max-w-6xl mx-auto mt-10 grid grid-cols-12 gap-6">
@@ -15,13 +27,18 @@ const AvailableStack = ({ stacks }: { stacks: IStack[] }) => {
                 <div className="grid grid-cols-3 gap-6">
 
                     {stacks.map((stack: IStack) => (
-                        <AvailableStackCard stack={stack} onAdd={addToStack} />
+                        <AvailableStackCard
+                            key={stack.id}
+                            stack={stack}
+                            onAdd={addToStack}
+                            isAdded={yourStack.some((item) => item.id === stack.id)}
+                        />
                     ))}
 
                 </div>
             </div>
             <div className="col-span-3">
-                <YourStack stacks={yourStack} />
+                <YourStack stacks={yourStack} onRemove={removeFromStack} />
             </div>
 
 

@@ -1,12 +1,12 @@
 import type IStack from "../../type/stack";
 
-const SelectedStackCard = ({ stack }: { stack: IStack }) => {
+const SelectedStackCard = ({ stack , onRemove}: { stack: IStack ; onRemove:(id:number) => void;}) => {
     return (
-        <div className="flex items-center gap-3">
+        <div className="  p-1.5  flex items-center gap-3">
             <img
                 src={stack.logo}
                 alt={stack.name}
-                className="h-8 w-8 object-contain"
+                className="h-5 w-5 "
             />
 
             <div>

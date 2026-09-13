@@ -1,9 +1,8 @@
 import type IStack from '../../type/stack';
 
-const AvailableStackCard = ({ stack, onAdd }: { stack: IStack; onAdd: (stack: IStack) => void }) => {
+const AvailableStackCard = ({ stack, onAdd, isAdded }: { stack: IStack; onAdd: (stack: IStack) => void; isAdded: boolean }) => {
     return (
         <div
-            key={stack.id}
             className="border border-gray-200 rounded-xl p-5 flex flex-col justify-evenly gap-5 "
         >
 
@@ -44,10 +43,11 @@ const AvailableStackCard = ({ stack, onAdd }: { stack: IStack; onAdd: (stack: IS
 
             <div>
                 <button
-                    className="w-full border bg-[#0A0F1D] text-[#ffffff] py-2 rounded-lg  hover:bg-[#EC4899] hover:text-white transition  "
+                    disabled={isAdded}
                     onClick={() => onAdd(stack)}
+                    className="w-full border bg-[#0A0F1D] text-white py-2 rounded-lg hover:bg-[#EC4899] hover:text-white transition disabled:bg-gray-300 disabled:text-gray-500 disabled:cursor-not-allowed"
                 >
-                    Add to Stack
+                    {isAdded ? "Added to Stack" : "Add to Stack"}
                 </button>
             </div>
 
